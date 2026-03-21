@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: adjuneazuredevopsgithubacraksapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adjuneazuredevopsgithubacraksapp
+  template:
+    metadata:
+      labels:
+        app: adjuneazuredevopsgithubacraksapp 
+    spec:
+      containers:
+        - name: adjuneazuredevopsgithubacraksapp 
+          image: aksdevopsacradds.azurecr.io/adjuneazuredevopsgithubacraksapp
+          ports:
+          - containerPort: 80
