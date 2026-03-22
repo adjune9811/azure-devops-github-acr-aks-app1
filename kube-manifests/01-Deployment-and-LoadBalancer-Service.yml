@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: aksdevopsacradds.azurecr.io/adjuneazuredevopsgithubacrk8sapp:<tag>
+          image: aksdevopsacradds.azurecr.io/adjuneazuredevopsgithubacraksapp
           ports:
             - containerPort: 80
 ---
